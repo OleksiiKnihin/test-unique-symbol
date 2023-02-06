@@ -1,0 +1,11 @@
+.uniqueSymbolText {
+  font-size: 30px;
+  text-align: center;
+}
+
+.uniqueSymbolSpan {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+  text-decoration: underline;
+}

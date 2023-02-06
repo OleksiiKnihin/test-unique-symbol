@@ -1,4 +1,5 @@
-function searchFirstUnicSymbol(word) {
+// Search function for the first unique symbol in one word
+function searchFirstUnicSymbolInWord(word) {
   const ArrSymbols = [];
 
   for (let i = 0; i < word.length; i += 1) {
@@ -13,25 +14,26 @@ function searchFirstUnicSymbol(word) {
       ArrSymbols.push(symbol);
     }
   }
+
   return ArrSymbols[0];
 }
 
-export function searchFirstNotRepeatSymbolInAllText(text) {
-  if (!text) return '';
+export function searchFerstUnicSymbolInAllText(text) {
+  // Сheck for string with spaces
+  if (text.trim() === '') return '';
+
+  // Delete extra symbols
+  let currentText = text.replaceAll(/[-().,^+!?]/g, '');
+
   // Divide the whole text into single words
-  let arrWords = text.trim().split(' ');
+  currentText = currentText.split(' ');
 
   // Looking for the first unique symbol in each word
-  let firstSymbolInEachWord = [];
-  for (let i = 0; i < arrWords.length; i += 1) {
-    firstSymbolInEachWord.push(searchFirstUnicSymbol(arrWords[i]));
+  let symbolInEachWord = [];
+  for (let i = 0; i < currentText.length; i += 1) {
+    symbolInEachWord.push(searchFirstUnicSymbolInWord(currentText[i]));
   }
 
-  //We are looking for the first unique symbol in all text
-  let answer = searchFirstUnicSymbol(firstSymbolInEachWord);
-
-  console.log(answer);
-  //   console.log(`Your text: ${text}`);
-  //   console.log(`First unique symbol in all text - ${answer}`);
-  return answer;
+  //Looking for the first unique symbol in all text
+  return searchFirstUnicSymbolInWord(symbolInEachWord);
 }

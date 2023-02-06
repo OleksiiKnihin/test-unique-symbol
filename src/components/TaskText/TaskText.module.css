@@ -1,0 +1,15 @@
+.wrapper {
+  font-size: 15px;
+  margin: 30px auto;
+  padding: 0 30px;
+}
+
+.taskHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exampleText {
+  font-style: italic;
+}
