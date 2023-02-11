@@ -1,4 +1,4 @@
-import { searchFerstUnicSymbolInAllText } from 'functions/search';
+import { searchFirstUnicSymbol } from 'functions/search';
 import { useState } from 'react';
 import { ButtonAdd } from './Buttons/ButtonAdd';
 import { ButtonClean } from './Buttons/ButtonClean';
@@ -17,7 +17,7 @@ export const App = () => {
   };
 
   const searchUniqSymbol = text => {
-    const result = searchFerstUnicSymbolInAllText(text);
+    const result = searchFirstUnicSymbol(text);
     setUnique(result);
   };
 
