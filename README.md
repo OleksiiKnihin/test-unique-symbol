@@ -8,3 +8,7 @@ Or if you want run code on your computer:
 3. Enter command - npm install (wait until all dependencies are installed).
 4. Enter command - npm start (wait for the browser to open the live page).
 5. Enjoy :)
+
+P.S. React project template was used to build the project and display the live
+page on Github. Link:
+https://github.com/goitacademy/react-homework-template#readme
