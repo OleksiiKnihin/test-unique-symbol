@@ -1,3 +1,6 @@
+Link to main function:
+https://github.com/OleksiiKnihin/test-unique-symbol/blob/main/src/functions/search.js
+
 You can see live-page on link:
 https://oleksiiknihin.github.io/test-unique-symbol/
 
