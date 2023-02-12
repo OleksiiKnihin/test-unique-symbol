@@ -1,15 +1,12 @@
-export function searchFirstUnicSymbol(text) {
+export function searchFirstUnicSymbol(inputText) {
   // Сheck for string with spaces
-  if (text.trim() === '') return '';
-
-  // Delete extra symbols
-  text = text.replaceAll(/[-().,^+!?"]/g, '');
+  if (inputText.trim() === '') return '';
 
   // Divide the whole text into single words
-  text = text.split(' ');
+  const text = inputText.split(' ');
 
   // Looking for the first unique symbol in each word
-  let symbols = [];
+  const symbols = [];
 
   for (const word of text) {
     for (const letter of word) {
