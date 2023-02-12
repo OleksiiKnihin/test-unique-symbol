@@ -3,28 +3,26 @@ export function searchFirstUnicSymbol(text) {
   if (text.trim() === '') return '';
 
   // Delete extra symbols
-  let currentText = text.replaceAll(/[-().,^+!?"]/g, '');
+  text = text.replaceAll(/[-().,^+!?"]/g, '');
 
   // Divide the whole text into single words
-  currentText = currentText.split(' ');
+  text = text.split(' ');
 
   // Looking for the first unique symbol in each word
-  let symbolInEachWord = [];
+  let symbols = [];
 
-  for (const word of currentText) {
+  for (const word of text) {
     for (const letter of word) {
       if (word.indexOf(letter) === word.lastIndexOf(letter)) {
-        symbolInEachWord.push(letter);
+        symbols.push(letter);
         break;
       }
     }
   }
 
   //Looking for the first unique symbol in all text
-  for (const symbol of symbolInEachWord) {
-    if (
-      symbolInEachWord.indexOf(symbol) === symbolInEachWord.lastIndexOf(symbol)
-    ) {
+  for (const symbol of symbols) {
+    if (symbols.indexOf(symbol) === symbols.lastIndexOf(symbol)) {
       return symbol;
     }
   }
