@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-unique-symbol/static/css/main.a7164672.css",
-    "main.js": "/test-unique-symbol/static/js/main.a5d2772c.js",
+    "main.js": "/test-unique-symbol/static/js/main.ff9d398d.js",
     "index.html": "/test-unique-symbol/index.html",
     "main.a7164672.css.map": "/test-unique-symbol/static/css/main.a7164672.css.map",
-    "main.a5d2772c.js.map": "/test-unique-symbol/static/js/main.a5d2772c.js.map"
+    "main.ff9d398d.js.map": "/test-unique-symbol/static/js/main.ff9d398d.js.map"
   },
   "entrypoints": [
     "static/css/main.a7164672.css",
-    "static/js/main.a5d2772c.js"
+    "static/js/main.ff9d398d.js"
   ]
 }
